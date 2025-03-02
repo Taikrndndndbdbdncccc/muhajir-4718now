@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Muhajir</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- JADWAL SHOLAT DI ATAS -->
+        <div class="prayer-times">
+            <h2 class="title">Jadwal Sholat - Seri Kembangan</h2>
+            <div class="schedule">
+                <div><b>Subuh</b><br><span id="subuh"></span></div>
+                <div><b>Zuhur</b><br><span id="zuhur"></span></div>
+                <div><b>Asar</b><br><span id="asar"></span></div>
+                <div><b>Maghrib</b><br><span id="magrib"></span></div>
+                <div><b>Isya</b><br><span id="isya"></span></div>
+            </div>
+        </div>
+
+        <!-- SOSIAL MEDIA DI SEBELAH KIRI -->
+        <div class="social-media">
+            <a href="https://tiktok.com/@iquu_4718" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
+            <a href="https://instagram.com/muhajir_4718" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com/halu" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://youtube.com/namaanda" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+            <a href="https://wa.me/6285372736144" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+        </div>
+
+        <!-- TOMBOL MASUK DI TENGAH -->
+        <div class="auth-buttons">
+            <button onclick="showLogin()">Masuk</button>
+            <button onclick="daftarWhatsApp()">Daftar</button>
+        </div>
+
+        <!-- FORM LOGIN -->
+        <div class="login-popup" id="loginPopup">
+            <div class="login-box">
+                <h3>Login</h3>
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button onclick="login()">Masuk</button>
+                <button onclick="closeLogin()">Batal</button>
+            </div>
+        </div>
+
+        <!-- JAM, TANGGAL, HARI (DITURUNKAN LAGI KE BAWAH) -->
+        <div class="time-section">
+            <p id="clock"></p>
+            <p id="date"></p>
+            <p id="day"></p>
+        </div>
+
+        <div class="spacer"></div> <!-- Untuk Scroll Lebih Panjang -->
+
+        <footer>
+            <p>Assalamualaikum, Selamat Datang di Web Muhajir</p>
+            <p>jagan lupa folow</p>
+        </footer>
+
+    </div>
+</body>
+</html>
